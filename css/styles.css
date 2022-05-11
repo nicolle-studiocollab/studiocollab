@@ -10366,6 +10366,7 @@ hr.title-underline {
   .page-section.dark h3 {
     color: #fff;
   }
+
   
   .page-section.dark hr {
     border-bottom: 3px solid #fff;
@@ -10666,7 +10667,12 @@ p.about-bio {
 
 #partner-with-us a:hover{
   text-decoration: underline;
-  color: #002332
+  color: #002332;
+}
+
+.dark#partner-with-us a:hover{
+  text-decoration: underline;
+  color: #fff;
 }
 
 
@@ -10866,6 +10872,13 @@ button#submitButton {
 
 /* Our Work Pages - Global */
 
+@media (max-width: 991px) {
+  .casestudy#mainNav {
+    background-color: #002332;
+  }
+}
+
+
 #our-work-hero {
   background-color: #90A3A7;
   padding-top: 166px;
@@ -10877,7 +10890,6 @@ button#submitButton {
 }
 
 #our-work-hero .client-logo{
-  width: 80px;
   padding-bottom: 30px;
 }
 
@@ -10894,6 +10906,20 @@ button#submitButton {
 #our-work-hero p{
   color: #fff;
   width: 720px;
+}
+
+@media (max-width: 991px) {
+  #our-work-hero .masthead-heading{
+    font-size: 44px;
+    line-height: 54px;
+    width: auto;
+  }
+  #our-work-hero .client-logo img{
+    width: 90px;
+  }
+  #our-work-hero p{
+    width: auto;
+  }
 }
 
 .page-section#project-goals{
@@ -10941,6 +10967,37 @@ button#submitButton {
   color: #fff;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (max-width: 991px) {
+  #project-goals h2 {
+    font-size: 34px;
+    line-height: 44px;
+    padding-left: 25px;
+  }
+  #project-goals .title-underline {
+    margin-left: 25px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+
+  #project-goals hr{
+    margin-bottom: 25px;
+  }
+  .project-description {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+  }
+  .project-description h3 {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 574px) {
+  .page-section#project-goals {
+    padding: 20px;
+  }
 }
 
 #approach-and-deliverables h2{
@@ -11049,6 +11106,27 @@ button#submitButton {
   margin-left: auto;
   position: relative;
 
+}
+
+@media (max-width: 991px) {
+  #approach-and-deliverables h2{
+    font-size: 34px;
+    line-height: 44px; 
+  }
+  #approach-and-deliverables .pullquote.full {
+    padding: 30px;
+  }
+
+  #approach-and-deliverables .pullquote p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  #partner-with-us h2{
+    font-size: 34px;
+    line-height: 44px; 
+  }
 }
 
 #see-more-work {
