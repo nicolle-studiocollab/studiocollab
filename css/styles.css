@@ -10872,11 +10872,13 @@ button#submitButton {
 
 /* Our Work Pages - Global */
 
+
 @media (max-width: 991px) {
   .casestudy#mainNav {
     background-color: #002332;
   }
 }
+
 
 #our-work-hero {
   background-color: #90A3A7;
@@ -10907,10 +10909,6 @@ button#submitButton {
   width: 720px;
 }
 
-#our-work-hero .client-logo img {
-  width: 150px; 
-}
-
 @media (max-width: 991px) {
   #our-work-hero .masthead-heading{
     font-size: 44px;
@@ -10918,10 +10916,16 @@ button#submitButton {
     width: auto;
   }
   #our-work-hero .client-logo img{
-    width: 125px;
+    width: 90px;
   }
   #our-work-hero p{
     width: auto;
+  }
+}
+
+@media (max-width: 521px) {
+  #our-work-hero {
+    height: 725px;
   }
 }
 
@@ -10935,28 +10939,28 @@ button#submitButton {
   color: #fff;
 }
 
-#project-goals h2, #project-goals p {
+#project-goals h2, #project-goals p{
   color: #fff;
 }
 
-#project-goals h2 {
+#project-goals h2{
   font-size: 44px;
   padding-left: 50px;
   padding-top: 50px;
   line-height: 54px;
 }
 
-#project-goals .title-underline {
+#project-goals .title-underline{
   margin-left: 50px;
   border-color: #fff;
 }
 
-.project-description {
+.project-description{
   padding-top: 50px;
   padding-right: 80px;
 }
 
-.project-description hr {
+.project-description hr{
   border-top: 1px solid #fff;
   padding: 10px 50%;
   margin-left: 0px;
@@ -11031,7 +11035,11 @@ button#submitButton {
   margin-top: 50px;
 }
 
-#approach-and-deliverables .pullquote.half {
+#approach-and-deliverables img{
+  width: 100%;
+}
+
+#approach-and-deliverables .pullquote.half{
   background-image: url('../assets/img/ourwork/pullquote_bg.png');
   background-repeat: no-repeat;
   margin-top: 30px;
@@ -11039,7 +11047,7 @@ button#submitButton {
   height: 200px;
 }
 
-#approach-and-deliverables .pullquote p {
+#approach-and-deliverables .pullquote p{
   font-style: italic;
   font-size: 16px;
   padding-top: 10px;
@@ -11111,6 +11119,10 @@ button#submitButton {
 
 }
 
+#approach-and-deliverables .pullquote.full img {
+  width: initial;
+}
+
 @media (max-width: 1199px) {
   .pullquote.full span:before , .pullquote.full span:after {
     width: 425px;
@@ -11122,6 +11134,11 @@ button#submitButton {
     font-size: 34px;
     line-height: 44px; 
   }
+
+  #approach-and-deliverables .mobile-padding h2{
+    padding-top: 25px;
+  }
+
   #approach-and-deliverables .pullquote.full {
     padding: 30px;
   }
@@ -11292,5 +11309,15 @@ line-height: 72px;
 
 #project-goals .container.qualtrics{
   background-color: #395159;
+}
+
+/* Our Work Pages - theSkimm */
+
+#our-work-hero.theSkimm {
+  background-image: url("../our-work/img/theskimm/theSkimmHero.png")
+}
+
+#project-goals .container.theSkimm{
+  background-color: #90A3A7;
 }
 
