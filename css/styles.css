@@ -11169,6 +11169,10 @@ button#submitButton {
   font-weight: bold;
 }
 
+#project-results img{
+  width: 100%;
+}
+
 .results-stat {
   border-top: 2px solid #AF6B58;
   border-bottom: 2px solid #AF6B58;
@@ -11206,6 +11210,8 @@ line-height: 72px;
   font-size: 44px;
   line-height: 54px;
 }
+
+
 
 @media (max-width: 1199px) {
   #project-results h2{
