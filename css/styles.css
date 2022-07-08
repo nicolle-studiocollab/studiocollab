@@ -10569,6 +10569,44 @@ hr.favorite-projects-underline {
   opacity: 0;
 }
 
+#our-work .client-list .image-wrapper{
+  background-color: #AB7A48;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+
+}
+
+#our-work .client-list .thumbnail{
+  position: block;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  transition: 300ms ease-in-out;
+}
+
+#our-work .client-list .logo{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-work .client-list .logo img{
+  width: 150px;
+}
+
+.image-wrapper:hover .thumbnail {
+  opacity: 0;
+}
+
+
+
 @media (max-width: 991px) {
   #our-work .client-card {
     width: 50%;
