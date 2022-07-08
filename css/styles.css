@@ -10503,7 +10503,27 @@ hr.favorite-projects-underline {
 }
 
 /* Who We've Helped */
+#our-work .client-card {
+  border: 1px solid #90A3A7;
+  width: 100%;
+  aspect-ratio: 1/1;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease-in-out;
+}
 
+#our-work .client-card{
+  border: 1px solid #90A3A7;
+  width: 100%;
+  aspect-ratio: 1/1;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease-in-out;
+}
 
 #our-work a .client-card:hover{
   background-color: #002332;
@@ -10532,44 +10552,6 @@ hr.favorite-projects-underline {
 #our-work .client-list .row{
   margin-bottom: 40px;
 }
-
-#our-work .client-list .image-wrapper{
-  background-color: #AB7A48;
-  height: 300px;
-  text-align: center;
-  position: relative;
-  border-radius: 4px;
-
-}
-
-#our-work .client-list .thumbnail{
-  position: block;
-  border-radius: 4px;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-  transition: 300ms ease-in-out;
-}
-
-#our-work .client-list .logo{
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#our-work .client-list .logo img{
-  width: 150px;
-}
-
-.image-wrapper:hover .thumbnail {
-  opacity: 0;
-}
-
-
 
 @media (max-width: 991px) {
   #our-work .client-card {
@@ -10888,12 +10870,6 @@ button#submitButton {
   }
 }
 
-@media (max-width: 1200px) {
-  #terms h2 {
-    font-size: 50px;
-  }
-}
-
 /* Our Work Pages - Global */
 
 @media (max-width: 991px) {
@@ -10932,7 +10908,7 @@ button#submitButton {
 }
 
 #our-work-hero .client-logo img {
-  width: 125px; 
+  width: 150px; 
 }
 
 @media (max-width: 991px) {
@@ -10946,21 +10922,6 @@ button#submitButton {
   }
   #our-work-hero p{
     width: auto;
-  }
-}
-
-@media (max-width: 500px) {
-  #our-work-hero .masthead-heading{
-    font-size: 35px;
-    line-height: 45px;
-    width: 100%;
-  }
-
-  #our-work-hero .client-logo img{
-    width: 100px;
-  }
-  #our-work-hero p{
-    width: 500px;
   }
 }
 
@@ -11333,16 +11294,3 @@ line-height: 72px;
   background-color: #395159;
 }
 
-/* Our Work Pages - LG-Blue Sky */
-
-#our-work-hero.lg-bluesky {
-  background-image: url("../our-work/img/lg-bluesky/lg-blueskyHero.svg")
-}
-
-#our-work-hero.lg-bluesky .client-logo{
-  opacity: 0.3;
-}
-
-#project-goals .container.lg-bluesky{
-  background-color: #002332;
-}
