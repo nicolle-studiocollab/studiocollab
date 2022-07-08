@@ -10529,8 +10529,44 @@ hr.favorite-projects-underline {
   color: #002332
 }
 
-#our-work .client-list .row{
-  margin-bottom: 40px;
+#our-work .client-list .col-lg-6 {
+  margin-bottom: 60px;
+}
+
+#our-work .client-list .image-wrapper{
+  background-color: #AB7A48;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+
+}
+
+#our-work .client-list .thumbnail{
+  position: block;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  transition: 300ms ease-in-out;
+}
+
+#our-work .client-list .logo{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-work .client-list .logo img{
+  width: 150px;
+}
+
+.image-wrapper:hover .thumbnail {
+  opacity: 0;
 }
 
 #our-work .client-list .image-wrapper{
@@ -10576,8 +10612,13 @@ hr.favorite-projects-underline {
     width: 50%;
   }
 
+  #our-work h3{
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
   #our-work p{
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 
@@ -10909,7 +10950,6 @@ button#submitButton {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
 }
 
 #our-work-hero .client-logo{
@@ -10951,8 +10991,8 @@ button#submitButton {
 
 @media (max-width: 500px) {
   #our-work-hero .masthead-heading{
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 45px;
+    line-height: 55px;
     width: 100%;
   }
 
@@ -10960,7 +11000,7 @@ button#submitButton {
     width: 100px;
   }
   #our-work-hero p{
-    width: 500px;
+    width: auto;
   }
 }
 
@@ -11180,6 +11220,30 @@ button#submitButton {
   }
 }
 
+@media (max-width: 500px) {
+  .pullquote.full span:before , .pullquote.full span:after {
+    width: 160px;
+  }
+}
+
+@media (max-width: 440px) {
+  .pullquote.full span:before , .pullquote.full span:after {
+    width: 140px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pullquote.full span:before , .pullquote.full span:after {
+    width: 120px;
+  }
+}
+
+@media (max-width: 360px) {
+  .pullquote.full span:before , .pullquote.full span:after {
+    width: 100px;
+  }
+}
+
 @media (max-width: 991px) {
   #partner-with-us h2{
     font-size: 34px;
@@ -11272,6 +11336,16 @@ line-height: 72px;
   .stat-description h3 {
     font-size: 35px;
     line-height: 45px;
+  }  
+}
+
+@media (max-width: 400px) {
+  .stat-value {
+    margin-top: 20px;
+  }
+  .stat-description h3 {
+    font-size: 27px;
+    line-height: 35px;
   }  
 }
 
