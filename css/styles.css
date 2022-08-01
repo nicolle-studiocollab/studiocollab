@@ -11045,6 +11045,15 @@ button#submitButton {
   }
 }
 
+#approach-and-deliverables .row{
+  padding-bottom: 60px;
+}
+
+#approach-and-deliverables .row.full-img{
+  padding-bottom: 0px;
+}
+
+
 #approach-and-deliverables h2{
   font-size: 44px;
   line-height: 54px;
